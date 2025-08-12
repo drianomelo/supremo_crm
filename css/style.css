@@ -9,6 +9,11 @@
   --clr-black: #1C1C1C;
 }
 
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 400;
+}
+
 .bg-blue-d {
   background-color: var(--clr-blue-d) !important;
 }
