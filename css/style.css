@@ -6,11 +6,11 @@
   --clr-white: #faf8f6;
   --clr-white-50: #faf8f611;
   --clr-gray: #faf8f6;
-  --clr-black: #1C1C1C;
+  --clr-black: #1c1c1c;
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 400;
 }
 
@@ -27,51 +27,71 @@ body {
 }
 
 .text-white {
-    color: var(--clr-white) !important;
+  color: var(--clr-white) !important;
 }
 
 .text-black {
-    color: var(--clr-black) !important;
+  color: var(--clr-black) !important;
 }
 
 .text-orange {
-    color: var(--clr-orange) !important;
+  color: var(--clr-orange) !important;
 }
 
 .bg-orange {
-    background-color: var(--clr-orange) !important;
+  background-color: var(--clr-orange) !important;
 }
 
 .fs-7 {
-    font-size: .8rem !important;
+  font-size: 0.8rem !important;
 }
 
 .fs-8 {
-    font-size: .7em !important;
+  font-size: 0.7em !important;
 }
 
 .border-white-50 {
-    border-color: var(--clr-white-50) !important;
+  border-color: var(--clr-white-50) !important;
 }
 
 .card-imoveis::before {
-    content: '';
-    width: 100%;
-    height: 500px;
-    background-image: linear-gradient(to top, #000, transparent);
-    opacity: .5;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  content: "";
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(to top, #000, transparent);
+  opacity: 0.5;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 .card-small::before {
-    content: '';
-    width: 90%;
-    height: 100%;
-    background-image: linear-gradient(to right, var(--clr-blue-d), transparent);
-    opacity: .9;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  content: "";
+  width: 90%;
+  height: 100%;
+  background-image: linear-gradient(to right, var(--clr-blue-d), transparent);
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.itens-select-dropdown:last-child {
+  padding-bottom: 1rem !important;
+}
+
+.button-search {
+  transition: all 0.3s;
+}
+
+.button-search:hover {
+  background-color: var(--clr-white) !important;
+  color: var(--clr-orange) !important;
+}
+
+@media (max-width: 991px) {
+  .cod-search > input {
+    padding: 1rem !important;
+    border-radius: 0 0 0 12px !important;
+  }
 }
