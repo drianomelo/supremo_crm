@@ -1,459 +1,956 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sistema Supremo CRM para Imobiliárias e Corretores de Imóveis</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <section class="position-relative vh-100 d-flex justify-content-between align-items-center" style="background: url('img/hero_img.png') center/cover no-repeat;">
-        <div class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75 z-0"></div>
-        <header class="position-absolute top-0 start-50 translate-middle-x container d-flex justify-content-between align-items-center py-3 z-1">
-            <button class="bg-transparent border-0 text-white fs-5">
-                <i class="fa-solid fa-bars"></i>
-            </button>
-            <img src="/img/logo-supremo-branco.png" alt="Logo Supremo CRM para Imobiliárias e Corretores de Imóveis">
-            <a href="" class="d-flex align-items-center gap-2 link-underline link-underline-opacity-0 text-white fw-semibold">
-                <i class="fa-brands fa-whatsapp"></i>
-                (79) 9999-9999
-            </a>
-        </header>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section
+      class="position-relative vh-100 d-flex justify-content-between align-items-center"
+      style="background: url('img/hero_img.png') center/cover no-repeat"
+    >
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-black opacity-75 z-0"
+      ></div>
+      <header
+        class="position-absolute top-0 start-50 translate-middle-x container d-flex justify-content-between align-items-center py-3 z-1"
+      >
+        <button class="bg-transparent border-0 text-white fs-5">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img
+          src="/img/logo-supremo-branco.png"
+          alt="Logo Supremo CRM para Imobiliárias e Corretores de Imóveis"
+        />
+        <a
+          href=""
+          class="d-flex align-items-center gap-2 link-underline link-underline-opacity-0 text-white fw-semibold"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+          (79) 9999-9999
+        </a>
+      </header>
 
-        <div class="position-relative z-1 container" style="max-width: 800px;">
-            <h2 class="text-white w-50 fw-semibold mb-4">Imoveis na Praia Brava e Fazenda em Itajai</h2>
+      <div class="position-relative z-1 container">
+        <form action="" class="row justify-content-center">
+          <div class="col-12 col-xl-8 p-0">
+            <h2 class="text-white w-50 fw-semibold mb-4 fs-1">
+              Imóveis na Praia Brava e Fazenda em Itajaí
+            </h2>
+          </div>
 
-            <div class="w-100 d-flex align-items-center mb-3">
-                <div class="d-flex gap-3 bg-blue-d-50 p-3 rounded-start-4" style="width: 150px;">
-                    <i class="fa-solid fa-house text-orange mt-2 fs-7"></i>
-                    <div class="d-flex flex-column">
-                        <label class="text-white fw-medium mb-1 d-flex justify-content-between align-items-center gap-4">Tipos <i class="fa-solid fa-angle-down text-white opacity-50 mt-1"></i></label>
-                        <span class="text-white opacity-25 fw-normal">Selecione</span>
+          <div class="col-12 col-xl-8">
+            <div class="row mt-4">
+              <div class="col-12 col-lg-8 p-0">
+                <div class="row g-0">
+                  <div class="col-12 col-lg-3 position-relative">
+                    <div
+                      class="d-flex gap-3 bg-blue-d-50 dropdown"
+                      style="
+                        border-radius: 12px 0 0 12px;
+                        padding: 20px;
+                        cursor: pointer;
+                      "
+                    >
+                      <i class="fa-solid fa-house text-orange mt-2 fs-8"></i>
+                      <div class="d-flex flex-column justify-content-center">
+                        <label
+                          class="text-white fs-7 fw-normal mb-1 d-flex justify-content-between align-items-center gap-4"
+                          >Tipos
+                          <i
+                            class="fa-solid fa-angle-down text-white opacity-50 mt-1"
+                          ></i
+                        ></label>
+                        <span
+                          class="text-white opacity-25 fw-normal fs-7 value-select"
+                          >Selecione
+                        </span>
+                      </div>
                     </div>
-                </div>
-                <div class="d-flex gap-3 bg-blue-d-50 p-3" style="width: 150px;">
-                    <i class="fa-solid fa-location-dot text-orange mt-2 fs-7"></i>
-                    <div class="d-flex flex-column">
-                        <label class="text-white fw-medium mb-1 d-flex justify-content-between align-items-center gap-4">Cidades <i class="fa-solid fa-angle-down text-white opacity-50 mt-1"></i></label>
-                        <span class="text-white opacity-25 fw-normal">Itajai</span>
+
+                    <div
+                      class="content-dropdown d-none position-absolute w-100 bg-white start-0 top-100"
+                    >
+                      <ul
+                        style="list-style: none"
+                        class="m-0 fs-7 fw-semibold p-0"
+                      >
+                        <li class="position-relative item-dropdown-select p-3 pb-0">
+                          <label
+                            for="apartamentos"
+                            class="d-flex align-items-center gap-1"
+                          >
+                            <i
+                              class="fa-solid fa-check d-none fs-7 text-blue mt-1"
+                            ></i>
+                            <input
+                              class="d-none"
+                              type="checkbox"
+                              name="tipos[]"
+                              value="apartamentos"
+                              id="apartamentos"
+                            />
+                            Apartamentos
+                          </label>
+                        </li>
+                        <li class="position-relative item-dropdown-select p-3 pb-0">
+                          <label
+                            for="apartamentos-garden"
+                            class="d-flex align-items-center gap-1"
+                          >
+                            <i
+                              class="fa-solid fa-check d-none fs-7 text-blue mt-1"
+                            ></i>
+                            <input
+                              class="d-none"
+                              type="checkbox"
+                              name="tipos[]"
+                              value="apartamentos-garden"
+                              id="apartamentos-garden"
+                            />
+                            Apartamentos Garden
+                          </label>
+                        </li>
+                        <li class="position-relative item-dropdown-select p-3 pb-0">
+                          <label
+                            for="coberturas"
+                            class="d-flex align-items-center gap-1"
+                          >
+                              <i
+                                class="fa-solid fa-check d-none fs-7 text-blue mt-1"
+                              ></i>
+                            <input
+                              class="d-none"
+                              type="checkbox"
+                              name="tipos[]"
+                              value="coberturas"
+                              id="coberturas"
+                            />
+                            Coberturas
+                          </label>
+                        </li>
+                        <li class="position-relative item-dropdown-select p-3 pb-0">
+                          <label
+                            for="salas-comerciais"
+                            class="d-flex align-items-center gap-1"
+                          >
+                              <i
+                                class="fa-solid fa-check d-none fs-7 text-blue mt-1"
+                              ></i>
+                            <input
+                              class="d-none"
+                              type="checkbox"
+                              name="tipos[]"
+                              value="salas-comerciais"
+                              id="salas-comerciais"
+                            />
+                            Salas Comerciais
+                          </label>
+                        </li>
+                        <li class="position-relative item-dropdown-select p-3">
+                          <label
+                            for="studios"
+                            class="d-flex align-items-center gap-1"
+                          >
+                              <i
+                                class="fa-solid fa-check d-none fs-7 text-blue mt-1"
+                              ></i>
+                            <input
+                              class="d-none"
+                              type="checkbox"
+                              name="tipos[]"
+                              value="studios"
+                              id="studios"
+                            />
+                            Studios
+                          </label>
+                        </li>
+                      </ul>
                     </div>
-                </div>
-                <div class="d-flex gap-3 bg-blue-d-50 p-3" style="width: 150px;">
-                    <i class="fa-solid fa-location-dot text-orange mt-2 fs-7"></i>
-                    <div class="d-flex flex-column">
-                        <label class="text-white fw-medium mb-1 d-flex justify-content-between align-items-center gap-4">Bairros <i class="fa-solid fa-angle-down text-white opacity-50 mt-1"></i></label>
-                        <span class="text-white opacity-25 fw-normal">Selecione</span>
+                  </div>
+                  <div
+                    class="col-12 col-lg-3 d-flex gap-3 bg-blue-d-50"
+                    style="padding: 20px; cursor: pointer"
+                  >
+                    <i
+                      class="fa-solid fa-location-dot text-orange mt-2 fs-8"
+                    ></i>
+                    <div class="d-flex flex-column justify-content-center">
+                      <label
+                        class="text-white fw-normal mb-1 fs-7 d-flex justify-content-between align-items-center gap-4"
+                        >Cidades
+                        <i
+                          class="fa-solid fa-angle-down text-white opacity-50 mt-1"
+                        ></i
+                      ></label>
+                      <span class="text-white opacity-25 fw-normal fs-7"
+                        >Itajai</span
+                      >
                     </div>
-                </div>
-                <div class="d-flex gap-3 bg-blue-d-50 p-3 border-end border-white-50" style="width: 150px;">
-                    <i class="fa-solid fa-dollar-sign text-orange mt-2 fs-7"></i>
-                    <div class="d-flex flex-column">
-                        <label class="text-white fw-medium mb-1 d-flex justify-content-between align-items-center gap-4">Valor <i class="fa-solid fa-angle-down text-white opacity-50 mt-1"></i></label>
-                        <span class="text-white opacity-25 fw-normal">Selecione</span>
+                  </div>
+                  <div
+                    class="col-12 col-lg-3 d-flex gap-3 bg-blue-d-50"
+                    style="padding: 20px; cursor: pointer"
+                  >
+                    <i
+                      class="fa-solid fa-location-dot text-orange mt-2 fs-8"
+                    ></i>
+                    <div class="d-flex flex-column justify-content-center">
+                      <label
+                        class="text-white fw-normal mb-1 fs-7 d-flex justify-content-between align-items-center gap-4"
+                        >Bairros
+                        <i
+                          class="fa-solid fa-angle-down text-white opacity-50 mt-1"
+                        ></i
+                      ></label>
+                      <span class="text-white opacity-25 fw-normal fs-7"
+                        >Selecione</span
+                      >
                     </div>
+                  </div>
+                  <div
+                    class="col-12 col-lg-3 d-flex gap-3 bg-blue-d-50 border-end border-white-50"
+                    style="padding: 20px; cursor: pointer"
+                  >
+                    <i
+                      class="fa-solid fa-dollar-sign text-orange mt-2 fs-8"
+                    ></i>
+                    <div class="d-flex flex-column justify-content-center">
+                      <label
+                        class="text-white fw-normal mb-1 fs-7 d-flex justify-content-between align-items-center gap-4"
+                        >Valor
+                        <i
+                          class="fa-solid fa-angle-down text-white opacity-50 mt-1"
+                        ></i
+                      ></label>
+                      <span class="text-white opacity-25 fw-normal fs-7"
+                        >Selecione</span
+                      >
+                    </div>
+                  </div>
                 </div>
-                <div class="d-flex gap-4 bg-blue-d-50 ps-4 align-items-center rounded-end-4" style="height: 84px;">
-                    <label class="text-white fw-medium mb-1">Codigo</label>
-                    <button class="bg-orange border-0 text-white h-100 px-5 rounded-3"><i class="fa-solid fs-4 fa-magnifying-glass"></i></button>
-                </div>
+              </div>
+              <div class="col-12 col-lg-2 p-0">
+                <input
+                  type="text"
+                  class="h-100 w-100 text-center border-0 bg-blue-d-50 text-white"
+                  style="outline: none"
+                  placeholder="Código"
+                />
+                <!-- <div
+                  class="d-flex gap-4 bg-blue-d-50 ps-4 align-items-center rounded-end-4"
+                  style="height: 84px"
+                >
+                  <label class="text-white fw-medium mb-1">Codigo</label>
+                </div> -->
+              </div>
+              <div class="col-12 col-lg-2 p-0">
+                <button
+                  class="bg-orange border-0 text-white h-100 px-5 rounded-3"
+                >
+                  <i class="fa-solid fs-4 fa-magnifying-glass"></i>
+                </button>
+              </div>
             </div>
 
-            <a href="" class="link-underline link-underline-opacity-0 text-white d-flex align-items-center gap-2" style="justify-self: flex-end;">Busca Avançada <span class="border px-3 rounded"><i class="fs-7 fa-solid fa-arrow-right-long"></i></span></a>
-        </div>
+            <a
+              href=""
+              class="link-underline link-underline-opacity-0 text-white d-flex align-items-center gap-2"
+              style="justify-self: flex-end"
+              >Busca Avançada
+              <span class="border px-3 rounded"
+                ><i class="fs-7 fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+        </form>
+      </div>
     </section>
 
     <section class="bg-white">
-        <div class="container pt-4 pb-4 border-bottom mb-4">
-            <div class="d-flex flex-column align-items-center justify-content-between mb-4">
-                <h3 class="text-black fs-1">Conheça nossos Imoveis</h3>
-                <p class="text-orange fw-medium">O que nossos visitantes mais procuram em nosso site.</p>
-            </div>
-
-            <div class="d-flex gap-5">
-                <div class="d-flex flex-column" style="flex: 1;">
-                    <div class="card-imoveis position-relative rounded-3 p-3 d-flex gap-2 flex-column justify-content-end overflow-hidden" style="height: 300px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                        <h4 class="text-white position-relative">Itajai</h4>
-                        <div class="d-flex position-relative align-items-center justify-content-between">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-white"></i>
-                                <p class="text-white mb-0">Santa Catarina</p>
-                            </div>
-                            <button class="border bg-transparent px-3 rounded"><i class="fs-7 fa-solid fa-arrow-right-long text-white"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-column gap-2 p-3 mt-2">
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-orange  d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-0 fa-solid fa-arrow-right"></i>
-                            Ver todos os imoveis
-                        </span>
-                    </div>
-                 </div>
-                <div class="d-flex flex-column" style="flex: 1;">
-                    <div class="card-imoveis position-relative rounded-3 p-3 d-flex gap-2 flex-column justify-content-end overflow-hidden" style="height: 300px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                        <h4 class="text-white position-relative">Itajai</h4>
-                        <div class="d-flex position-relative align-items-center justify-content-between">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-white"></i>
-                                <p class="text-white mb-0">Santa Catarina</p>
-                            </div>
-                            <button class="border bg-transparent px-3 rounded"><i class="fs-7 fa-solid fa-arrow-right-long text-white"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-column gap-2 p-3 mt-2">
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-orange  d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-0 fa-solid fa-arrow-right"></i>
-                            Ver todos os imoveis
-                        </span>
-                    </div>
-                 </div>
-                <div class="d-flex flex-column" style="flex: 1;">
-                    <div class="card-imoveis position-relative rounded-3 p-3 d-flex gap-2 flex-column justify-content-end overflow-hidden" style="height: 300px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                        <h4 class="text-white position-relative">Itajai</h4>
-                        <div class="d-flex position-relative align-items-center justify-content-between">
-                            <div class="d-flex align-items-center gap-2">
-                                <i class="fa-solid fa-location-dot text-white"></i>
-                                <p class="text-white mb-0">Santa Catarina</p>
-                            </div>
-                            <button class="border bg-transparent px-3 rounded"><i class="fs-7 fa-solid fa-arrow-right-long text-white"></i></button>
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-column gap-2 p-3 mt-2">
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-black d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
-                            Apartamentos no bairro Fazenda
-                        </span>
-                        <span class="fw-semibold text-orange  d-flex align-items-center gap-2">
-                            <i class="fs-7 opacity-0 fa-solid fa-arrow-right"></i>
-                            Ver todos os imoveis
-                        </span>
-                    </div>
-                 </div>
-            </div>
+      <div class="container pt-4 pb-4 border-bottom mb-4">
+        <div
+          class="d-flex flex-column align-items-center justify-content-between mb-4"
+        >
+          <h3 class="text-black fs-1">Conheça nossos Imoveis</h3>
+          <p class="text-orange fw-medium">
+            O que nossos visitantes mais procuram em nosso site.
+          </p>
         </div>
 
-        <div class="container pt-4 pb-4">
-            <div class="d-flex align-items-center justify-content-between mb-4">
-                <h3 class="text-black fs-1">Destaques</h3>
-                <a href="" class="link-underline link-underline-opacity-0 text-black d-flex align-items-center gap-2" style="justify-self: flex-end;">Ver mais <span class="border px-3 rounded border-black"><i class="fs-7 fa-solid fa-arrow-right-long"></i></span></a>
+        <div class="d-flex gap-5">
+          <div class="d-flex flex-column" style="flex: 1">
+            <div
+              class="card-imoveis position-relative rounded-3 p-3 d-flex gap-2 flex-column justify-content-end overflow-hidden"
+              style="
+                height: 300px;
+                background: url('img/hero_img.png') center/cover no-repeat;
+              "
+            >
+              <h4 class="text-white position-relative">Itajai</h4>
+              <div
+                class="d-flex position-relative align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-location-dot text-white"></i>
+                  <p class="text-white mb-0">Santa Catarina</p>
+                </div>
+                <button class="border bg-transparent px-3 rounded">
+                  <i class="fs-7 fa-solid fa-arrow-right-long text-white"></i>
+                </button>
+              </div>
             </div>
 
-            <div class="d-flex gap-5">
-                <div class="d-flex flex-column" style="flex: 1;">
-                    <div class="position-relative rounded-3 p-2" style="height: 250px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                       <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">EXCLUSIVO</span>
-                       <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">NA PLANTA</span>
-                    </div>
-
-                    <div class="d-flex flex-column gap-2 mt-3">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-black fw-bold fs-5">R$ 2.180.000</span>
-                        <span class="fs-7 opacity-50">Cod. 16</span>
-                      </div>
-
-                      <div class="d-flex flex-column">
-                        <span class="text-black opacity-75">Torres da Brava Sirena, Apartamento</span>
-                        <span class="text-black opacity-75">Rua Luci Canziani - Praia Brava, Itajai</span>
-                      </div>
-
-                      <ul class="d-flex gap-4 ps-0">
-                        <li class="fs-7 text-black fw-bold" style="list-style: none;">110m</li>
-                        <li class="fs-7 text-black fw-bold">3 quartos</li>
-                        <li class="fs-7 text-black fw-bold">1 suite</li>
-                        <li class="fs-7 text-black fw-bold">2 vagas</li>
-                    </ul>
-                    </div>
-                 </div>
-                <div class="d-flex flex-column" style="flex: 1;">
-                    <div class="position-relative rounded-3 p-2" style="height: 250px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                       <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">EXCLUSIVO</span>
-                       <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">NA PLANTA</span>
-                    </div>
-
-                    <div class="d-flex flex-column gap-2 mt-3">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-black fw-bold fs-5">R$ 2.180.000</span>
-                        <span class="fs-7 opacity-50">Cod. 16</span>
-                      </div>
-
-                      <div class="d-flex flex-column">
-                        <span class="text-black opacity-75">Torres da Brava Sirena, Apartamento</span>
-                        <span class="text-black opacity-75">Rua Luci Canziani - Praia Brava, Itajai</span>
-                      </div>
-
-                      <ul class="d-flex gap-4 ps-0">
-                        <li class="fs-7 text-black fw-bold" style="list-style: none;">110m</li>
-                        <li class="fs-7 text-black fw-bold">3 quartos</li>
-                        <li class="fs-7 text-black fw-bold">1 suite</li>
-                        <li class="fs-7 text-black fw-bold">2 vagas</li>
-                    </ul>
-                    </div>
-                 </div>
-                <div class="d-flex flex-column" style="flex: 1;">
-                    <div class="position-relative rounded-3 p-2" style="height: 250px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                       <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">EXCLUSIVO</span>
-                       <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">NA PLANTA</span>
-                    </div>
-
-                    <div class="d-flex flex-column gap-2 mt-3">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <span class="text-black fw-bold fs-5">R$ 2.180.000</span>
-                        <span class="fs-7 opacity-50">Cod. 16</span>
-                      </div>
-
-                     <div class="d-flex flex-column">
-                        <span class="text-black opacity-75">Torres da Brava Sirena, Apartamento</span>
-                        <span class="text-black opacity-75">Rua Luci Canziani - Praia Brava, Itajai</span>
-                      </div>
-
-                      <ul class="d-flex gap-4 ps-0">
-                        <li class="fs-7 text-black fw-bold" style="list-style: none;">110m</li>
-                        <li class="fs-7 text-black fw-bold">3 quartos</li>
-                        <li class="fs-7 text-black fw-bold">1 suite</li>
-                        <li class="fs-7 text-black fw-bold">2 vagas</li>
-                    </ul>
-                    </div>
-                 </div>
+            <div class="d-flex flex-column gap-2 p-3 mt-2">
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-orange d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-0 fa-solid fa-arrow-right"></i>
+                Ver todos os imoveis
+              </span>
             </div>
+          </div>
+          <div class="d-flex flex-column" style="flex: 1">
+            <div
+              class="card-imoveis position-relative rounded-3 p-3 d-flex gap-2 flex-column justify-content-end overflow-hidden"
+              style="
+                height: 300px;
+                background: url('img/hero_img.png') center/cover no-repeat;
+              "
+            >
+              <h4 class="text-white position-relative">Itajai</h4>
+              <div
+                class="d-flex position-relative align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-location-dot text-white"></i>
+                  <p class="text-white mb-0">Santa Catarina</p>
+                </div>
+                <button class="border bg-transparent px-3 rounded">
+                  <i class="fs-7 fa-solid fa-arrow-right-long text-white"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column gap-2 p-3 mt-2">
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-orange d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-0 fa-solid fa-arrow-right"></i>
+                Ver todos os imoveis
+              </span>
+            </div>
+          </div>
+          <div class="d-flex flex-column" style="flex: 1">
+            <div
+              class="card-imoveis position-relative rounded-3 p-3 d-flex gap-2 flex-column justify-content-end overflow-hidden"
+              style="
+                height: 300px;
+                background: url('img/hero_img.png') center/cover no-repeat;
+              "
+            >
+              <h4 class="text-white position-relative">Itajai</h4>
+              <div
+                class="d-flex position-relative align-items-center justify-content-between"
+              >
+                <div class="d-flex align-items-center gap-2">
+                  <i class="fa-solid fa-location-dot text-white"></i>
+                  <p class="text-white mb-0">Santa Catarina</p>
+                </div>
+                <button class="border bg-transparent px-3 rounded">
+                  <i class="fs-7 fa-solid fa-arrow-right-long text-white"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column gap-2 p-3 mt-2">
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-black d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-50 fa-solid fa-arrow-right"></i>
+                Apartamentos no bairro Fazenda
+              </span>
+              <span
+                class="fw-semibold text-orange d-flex align-items-center gap-2"
+              >
+                <i class="fs-7 opacity-0 fa-solid fa-arrow-right"></i>
+                Ver todos os imoveis
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-4 pb-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h3 class="text-black fs-1">Destaques</h3>
+          <a
+            href=""
+            class="link-underline link-underline-opacity-0 text-black d-flex align-items-center gap-2"
+            style="justify-self: flex-end"
+            >Ver mais
+            <span class="border px-3 rounded border-black"
+              ><i class="fs-7 fa-solid fa-arrow-right-long"></i></span
+          ></a>
         </div>
 
-        <section class="bg-blue-d">
-            <div class="container pt-5 pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-5">
-                    <h3 class="text-white fs-1">Exclusivos</h3>
-                    <a href="" class="link-underline link-underline-opacity-0 text-white d-flex align-items-center gap-2" style="justify-self: flex-end;">Ver mais <span class="border px-3 rounded border-white"><i class="fs-7 fa-solid fa-arrow-right-long"></i></span></a>
-                </div>
-
-                <div class="d-flex gap-5">
-                    <div class="d-flex flex-column" style="flex: 1;">
-                        <div class="position-relative rounded-3 p-2" style="height: 250px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                         <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">EXCLUSIVO</span>
-                        </div>
-
-                        <div class="d-flex flex-column gap-2 mt-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-white fw-bold fs-5">R$ 2.180.000</span>
-                            <span class="fs-7 opacity-75 text-white">Cod. 16</span>
-                        </div>
-
-                        <div class="d-flex flex-column">
-                            <span class="text-white opacity-75">Torres da Brava Sirena, Apartamento</span>
-                            <span class="text-white opacity-75">Rua Luci Canziani - Praia Brava, Itajai</span>
-                        </div>
-
-                        <ul class="d-flex gap-4 ps-0">
-                            <li class="fs-7 text-white fw-bold" style="list-style: none;">110m</li>
-                            <li class="fs-7 text-white fw-bold">3 quartos</li>
-                            <li class="fs-7 text-white fw-bold">1 suite</li>
-                            <li class="fs-7 text-white fw-bold">2 vagas</li>
-                        </ul>
-                        </div>
-                    </div>
-               <div class="d-flex flex-column" style="flex: 1;">
-                        <div class="position-relative rounded-3 p-2" style="height: 250px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                         <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">EXCLUSIVO</span>
-                        </div>
-
-                        <div class="d-flex flex-column gap-2 mt-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-white fw-bold fs-5">R$ 2.180.000</span>
-                            <span class="fs-7 opacity-75 text-white">Cod. 16</span>
-                        </div>
-
-                        <div class="d-flex flex-column">
-                            <span class="text-white opacity-75">Torres da Brava Sirena, Apartamento</span>
-                            <span class="text-white opacity-75">Rua Luci Canziani - Praia Brava, Itajai</span>
-                        </div>
-
-                        <ul class="d-flex gap-4 ps-0">
-                            <li class="fs-7 text-white fw-bold" style="list-style: none;">110m</li>
-                            <li class="fs-7 text-white fw-bold">3 quartos</li>
-                            <li class="fs-7 text-white fw-bold">1 suite</li>
-                            <li class="fs-7 text-white fw-bold">2 vagas</li>
-                        </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column" style="flex: 1;">
-                        <div class="position-relative rounded-3 p-2" style="height: 250px;  background: url('img/hero_img.png') center/cover no-repeat;">
-                         <span class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold" style="width: fit-content;">EXCLUSIVO</span>
-                        </div>
-
-                        <div class="d-flex flex-column gap-2 mt-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-white fw-bold fs-5">R$ 2.180.000</span>
-                            <span class="fs-7 opacity-75 text-white">Cod. 16</span>
-                        </div>
-
-                        <div class="d-flex flex-column">
-                            <span class="text-white opacity-75">Torres da Brava Sirena, Apartamento</span>
-                            <span class="text-white opacity-75">Rua Luci Canziani - Praia Brava, Itajai</span>
-                        </div>
-
-                        <ul class="d-flex gap-4 ps-0">
-                            <li class="fs-7 text-white fw-bold" style="list-style: none;">110m</li>
-                            <li class="fs-7 text-white fw-bold">3 quartos</li>
-                            <li class="fs-7 text-white fw-bold">1 suite</li>
-                            <li class="fs-7 text-white fw-bold">2 vagas</li>
-                        </ul>
-                        </div>
-                    </div>
-                </div>
+        <div class="d-flex gap-5">
+          <div class="d-flex flex-column" style="flex: 1">
+            <div
+              class="position-relative rounded-3 p-2"
+              style="
+                height: 250px;
+                background: url('img/hero_img.png') center/cover no-repeat;
+              "
+            >
+              <span
+                class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                style="width: fit-content"
+                >EXCLUSIVO</span
+              >
+              <span
+                class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                style="width: fit-content"
+                >NA PLANTA</span
+              >
             </div>
-        </section>
 
-        <section class="bg-gray pt-5 pb-5">
-            <div class="container bg-white shadow rounded-3 pt-3 pb-3 ps-5 pe-5 position-relative">
-                <div style="width: 60%;">
-                    <div>
-                        <span class="fs-7 text-orange">Sobre nos</span>
-                        <h1 class="text-black fw-bold">Supremo CRM</h1>
-                    </div>
-                    <p class="text-black fs-7">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore atque quas sed quis fugit minima alias eum odit quos consequatur.</p>
-                    <p class="text-black fs-7">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum repellat accusamus possimus dolorem ut numquam beatae quisquam illo dolor corporis ipsa, officia aliquid, repellendus asperiores temporibus quod neque! Iste eos soluta accusantium tempora magnam obcaecati doloribus eligendi ipsa. Quasi sapiente temporibus voluptatibus ipsa est blanditiis natus neque at nemo minus! Atque excepturi alias similique reiciendis dolores facilis veniam ullam quam?</p>
-                    <a href="" class="link-underline link-underline-opacity-0 text-black d-flex align-items-center gap-2">Ver mais <span class="border px-3 rounded border-black"><i class="fs-7 fa-solid fa-arrow-right-long"></i></span></a>
+            <div class="d-flex flex-column gap-2 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-black fw-bold fs-5">R$ 2.180.000</span>
+                <span class="fs-7 opacity-50">Cod. 16</span>
+              </div>
+
+              <div class="d-flex flex-column">
+                <span class="text-black opacity-75"
+                  >Torres da Brava Sirena, Apartamento</span
+                >
+                <span class="text-black opacity-75"
+                  >Rua Luci Canziani - Praia Brava, Itajai</span
+                >
+              </div>
+
+              <ul class="d-flex gap-4 ps-0">
+                <li class="fs-7 text-black fw-bold" style="list-style: none">
+                  110m
+                </li>
+                <li class="fs-7 text-black fw-bold">3 quartos</li>
+                <li class="fs-7 text-black fw-bold">1 suite</li>
+                <li class="fs-7 text-black fw-bold">2 vagas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex flex-column" style="flex: 1">
+            <div
+              class="position-relative rounded-3 p-2"
+              style="
+                height: 250px;
+                background: url('img/hero_img.png') center/cover no-repeat;
+              "
+            >
+              <span
+                class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                style="width: fit-content"
+                >EXCLUSIVO</span
+              >
+              <span
+                class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                style="width: fit-content"
+                >NA PLANTA</span
+              >
+            </div>
+
+            <div class="d-flex flex-column gap-2 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-black fw-bold fs-5">R$ 2.180.000</span>
+                <span class="fs-7 opacity-50">Cod. 16</span>
+              </div>
+
+              <div class="d-flex flex-column">
+                <span class="text-black opacity-75"
+                  >Torres da Brava Sirena, Apartamento</span
+                >
+                <span class="text-black opacity-75"
+                  >Rua Luci Canziani - Praia Brava, Itajai</span
+                >
+              </div>
+
+              <ul class="d-flex gap-4 ps-0">
+                <li class="fs-7 text-black fw-bold" style="list-style: none">
+                  110m
+                </li>
+                <li class="fs-7 text-black fw-bold">3 quartos</li>
+                <li class="fs-7 text-black fw-bold">1 suite</li>
+                <li class="fs-7 text-black fw-bold">2 vagas</li>
+              </ul>
+            </div>
+          </div>
+          <div class="d-flex flex-column" style="flex: 1">
+            <div
+              class="position-relative rounded-3 p-2"
+              style="
+                height: 250px;
+                background: url('img/hero_img.png') center/cover no-repeat;
+              "
+            >
+              <span
+                class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                style="width: fit-content"
+                >EXCLUSIVO</span
+              >
+              <span
+                class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                style="width: fit-content"
+                >NA PLANTA</span
+              >
+            </div>
+
+            <div class="d-flex flex-column gap-2 mt-3">
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-black fw-bold fs-5">R$ 2.180.000</span>
+                <span class="fs-7 opacity-50">Cod. 16</span>
+              </div>
+
+              <div class="d-flex flex-column">
+                <span class="text-black opacity-75"
+                  >Torres da Brava Sirena, Apartamento</span
+                >
+                <span class="text-black opacity-75"
+                  >Rua Luci Canziani - Praia Brava, Itajai</span
+                >
+              </div>
+
+              <ul class="d-flex gap-4 ps-0">
+                <li class="fs-7 text-black fw-bold" style="list-style: none">
+                  110m
+                </li>
+                <li class="fs-7 text-black fw-bold">3 quartos</li>
+                <li class="fs-7 text-black fw-bold">1 suite</li>
+                <li class="fs-7 text-black fw-bold">2 vagas</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="bg-blue-d">
+        <div class="container pt-5 pb-4">
+          <div class="d-flex align-items-center justify-content-between mb-5">
+            <h3 class="text-white fs-1">Exclusivos</h3>
+            <a
+              href=""
+              class="link-underline link-underline-opacity-0 text-white d-flex align-items-center gap-2"
+              style="justify-self: flex-end"
+              >Ver mais
+              <span class="border px-3 rounded border-white"
+                ><i class="fs-7 fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+
+          <div class="d-flex gap-5">
+            <div class="d-flex flex-column" style="flex: 1">
+              <div
+                class="position-relative rounded-3 p-2"
+                style="
+                  height: 250px;
+                  background: url('img/hero_img.png') center/cover no-repeat;
+                "
+              >
+                <span
+                  class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                  style="width: fit-content"
+                  >EXCLUSIVO</span
+                >
+              </div>
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-white fw-bold fs-5">R$ 2.180.000</span>
+                  <span class="fs-7 opacity-75 text-white">Cod. 16</span>
                 </div>
 
-                <img src="img/homem.png" alt="Homem sorrindo com os braços cruzados" class="position-absolute bottom-0" style="width: 280px; right: 30px;">
-            </div>
-        </section>
-
-        <section class="pt-5 pb-5">
-            <div class="container d-flex align-items-center gap-5">
-                <div class="rounded-4 p-4 ps-5 position-relative overflow-hidden card-small" style=" flex:1; background: url('img/hero_img.png') center/cover no-repeat;">
-                    <div class="position-relative mb-5">
-                        <span class="fs-7 text-orange">Anuncie</span>
-                        <h1 class="fs-3 text-white fw-bold">Seu imovel</h1>
-                    </div>
-                    <a href="" class="fs-7 link-underline link-underline-opacity-0 text-white d-flex align-items-center gap-2 position-relative">Anunciar<span class="border px-3 p-2 rounded border-white d-flex align-items-center"><i class="fs-8 fa-solid fa-arrow-right-long"></i></span></a>
+                <div class="d-flex flex-column">
+                  <span class="text-white opacity-75"
+                    >Torres da Brava Sirena, Apartamento</span
+                  >
+                  <span class="text-white opacity-75"
+                    >Rua Luci Canziani - Praia Brava, Itajai</span
+                  >
                 </div>
-                <div class="rounded-4 p-4 ps-5 position-relative overflow-hidden card-small" style=" flex:1; background: url('img/hero_img.png') center/cover no-repeat;">
-                    <div class="position-relative mb-5">
-                        <span class="fs-7 text-orange">Sobre nos</span>
-                        <h1 class="fs-3 text-white fw-bold">Supremo CRM</h1>
-                    </div>
-                    <a href="" class="fs-7 link-underline link-underline-opacity-0 text-white d-flex align-items-center gap-2 position-relative">Anunciar<span class="border px-3 p-2 rounded border-white d-flex align-items-center"><i class="fs-8 fa-solid fa-arrow-right-long"></i></span></a>
+
+                <ul class="d-flex gap-4 ps-0">
+                  <li class="fs-7 text-white fw-bold" style="list-style: none">
+                    110m
+                  </li>
+                  <li class="fs-7 text-white fw-bold">3 quartos</li>
+                  <li class="fs-7 text-white fw-bold">1 suite</li>
+                  <li class="fs-7 text-white fw-bold">2 vagas</li>
+                </ul>
+              </div>
+            </div>
+            <div class="d-flex flex-column" style="flex: 1">
+              <div
+                class="position-relative rounded-3 p-2"
+                style="
+                  height: 250px;
+                  background: url('img/hero_img.png') center/cover no-repeat;
+                "
+              >
+                <span
+                  class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                  style="width: fit-content"
+                  >EXCLUSIVO</span
+                >
+              </div>
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-white fw-bold fs-5">R$ 2.180.000</span>
+                  <span class="fs-7 opacity-75 text-white">Cod. 16</span>
                 </div>
-            </div>
-        </section>
 
-        <footer >
-            <div class="bg-blue-d">
-                <div class="container">
-                    <div class="pt-4 pb-4 border-bottom border-white-50 d-flex align-items-center justify-content-between">
-                        <img style="width: 150px;" src="img/logo-supremo-branco.png" alt="Logo Supremo CRM par Imobiliárias">
-                    
-                        <div class="d-flex align-items-center gap-1">
-                            <span class=" justify-content-center text-white rounded-2 border d-flex align-items-center" style="width: 23px; height: 23px;"><i class="fa-brands fs-7 fa-instagram"></i></span>
-                            <span class=" justify-content-center text-white rounded-2 border d-flex align-items-center" style="width: 23px; height: 23px;"><i class="fa-brands fs-7 fa-facebook-f"></i></span>
-                            <span class=" justify-content-center text-white rounded-2 border d-flex align-items-center" style="width: 23px; height: 23px;"><i class="fa-brands fs-7 fa-youtube"></i></span>
-                            <span class=" justify-content-center text-white rounded-2 border d-flex align-items-center" style="width: 23px; height: 23px;"><i class="fa-brands fs-7 fa-linkedin"></i></span>
-                        </div>
-
-                        <a href="" class="d-flex align-items-center gap-2 link-underline link-underline-opacity-0 text-white fw-semibold">
-                            <i class="fa-brands fa-whatsapp"></i>
-                            (79) 9999-9999
-                        </a>
-                    </div>
-
-                    <div class="pt-4 pb-1 d-flex justify-content-between">
-                        <ul class="ps-0 d-flex flex-column gap-2 text-white fs-7 fw-semibold" style="list-style: none;">
-                            <li class="fs-6 text-orange opacity-50">Navegação</li>
-                            <li>Pagina Inicial</li>
-                            <li>Buscar Imoveis</li>
-                            <li>Empreendimentos</li>
-                            <li>Anuncie aqui</li>
-                            <li>Sobre nos</li>
-                            <li>Entre em contato</li>
-                            <li>Politica de Privacidade</li>
-                        </ul>
-                        <ul class="ps-0 d-flex flex-column gap-2 text-white fs-7 fw-semibold" style="list-style: none;">
-                            <li class="fs-6 text-orange opacity-50">Mais Buscados</li>
-                            <li>3 quartos na Praia Brava</li>
-                            <li>3 quartos na Praia Brava</li>
-                            <li>3 quartos na Praia Brava</li>
-                            <li>3 quartos na Praia Brava</li>
-                            <li>3 quartos na Praia Brava</li>
-                            <li>3 quartos na Praia Brava</li>
-                            <li>3 quartos na Praia Brava</li>
-                        </ul>
-                        <ul class="ps-0 d-flex flex-column gap-2 text-white fs-7 fw-semibold" style="list-style: none;">
-                            <li class="fs-6 text-orange opacity-50">Endereço</li>
-                            <li>Riveira Business & Mall</li>
-                            <li>Av. Francisco Reis, 281 - Sala 12 - Terreo</li>
-                            <li>Meia Praia, Itapema - SC</li>
-                            <li>CEP: 88000-000</li>
-                            <li class="mt-3">CRECI/SC 12345-J</li>
-                        </ul>
-                    </div>
+                <div class="d-flex flex-column">
+                  <span class="text-white opacity-75"
+                    >Torres da Brava Sirena, Apartamento</span
+                  >
+                  <span class="text-white opacity-75"
+                    >Rua Luci Canziani - Praia Brava, Itajai</span
+                  >
                 </div>
+
+                <ul class="d-flex gap-4 ps-0">
+                  <li class="fs-7 text-white fw-bold" style="list-style: none">
+                    110m
+                  </li>
+                  <li class="fs-7 text-white fw-bold">3 quartos</li>
+                  <li class="fs-7 text-white fw-bold">1 suite</li>
+                  <li class="fs-7 text-white fw-bold">2 vagas</li>
+                </ul>
+              </div>
             </div>
-            <div class="bg-white text-black fs-7 d-flex justify-content-center p-2">
-                Site desenvolvido por <b class="ms-1">Supremo CRM</b>
+            <div class="d-flex flex-column" style="flex: 1">
+              <div
+                class="position-relative rounded-3 p-2"
+                style="
+                  height: 250px;
+                  background: url('img/hero_img.png') center/cover no-repeat;
+                "
+              >
+                <span
+                  class="bg-orange text-white fs-7 rounded-4 px-2 fw-semibold"
+                  style="width: fit-content"
+                  >EXCLUSIVO</span
+                >
+              </div>
+
+              <div class="d-flex flex-column gap-2 mt-3">
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="text-white fw-bold fs-5">R$ 2.180.000</span>
+                  <span class="fs-7 opacity-75 text-white">Cod. 16</span>
+                </div>
+
+                <div class="d-flex flex-column">
+                  <span class="text-white opacity-75"
+                    >Torres da Brava Sirena, Apartamento</span
+                  >
+                  <span class="text-white opacity-75"
+                    >Rua Luci Canziani - Praia Brava, Itajai</span
+                  >
+                </div>
+
+                <ul class="d-flex gap-4 ps-0">
+                  <li class="fs-7 text-white fw-bold" style="list-style: none">
+                    110m
+                  </li>
+                  <li class="fs-7 text-white fw-bold">3 quartos</li>
+                  <li class="fs-7 text-white fw-bold">1 suite</li>
+                  <li class="fs-7 text-white fw-bold">2 vagas</li>
+                </ul>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-gray pt-5 pb-5">
+        <div
+          class="container bg-white shadow rounded-3 pt-3 pb-3 ps-5 pe-5 position-relative"
+        >
+          <div style="width: 60%">
+            <div>
+              <span class="fs-7 text-orange">Sobre nos</span>
+              <h1 class="text-black fw-bold">Supremo CRM</h1>
+            </div>
+            <p class="text-black fs-7">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore atque quas sed quis fugit minima alias eum odit quos
+              consequatur.
+            </p>
+            <p class="text-black fs-7">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
+              repellat accusamus possimus dolorem ut numquam beatae quisquam
+              illo dolor corporis ipsa, officia aliquid, repellendus asperiores
+              temporibus quod neque! Iste eos soluta accusantium tempora magnam
+              obcaecati doloribus eligendi ipsa. Quasi sapiente temporibus
+              voluptatibus ipsa est blanditiis natus neque at nemo minus! Atque
+              excepturi alias similique reiciendis dolores facilis veniam ullam
+              quam?
+            </p>
+            <a
+              href=""
+              class="link-underline link-underline-opacity-0 text-black d-flex align-items-center gap-2"
+              >Ver mais
+              <span class="border px-3 rounded border-black"
+                ><i class="fs-7 fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+
+          <img
+            src="img/homem.png"
+            alt="Homem sorrindo com os braços cruzados"
+            class="position-absolute bottom-0"
+            style="width: 280px; right: 30px"
+          />
+        </div>
+      </section>
+
+      <section class="pt-5 pb-5">
+        <div class="container d-flex align-items-center gap-5">
+          <div
+            class="rounded-4 p-4 ps-5 position-relative overflow-hidden card-small"
+            style="
+              flex: 1;
+              background: url('img/hero_img.png') center/cover no-repeat;
+            "
+          >
+            <div class="position-relative mb-5">
+              <span class="fs-7 text-orange">Anuncie</span>
+              <h1 class="fs-3 text-white fw-bold">Seu imovel</h1>
+            </div>
+            <a
+              href=""
+              class="fs-7 link-underline link-underline-opacity-0 text-white d-flex align-items-center gap-2 position-relative"
+              >Anunciar<span
+                class="border px-3 p-2 rounded border-white d-flex align-items-center"
+                ><i class="fs-8 fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+          <div
+            class="rounded-4 p-4 ps-5 position-relative overflow-hidden card-small"
+            style="
+              flex: 1;
+              background: url('img/hero_img.png') center/cover no-repeat;
+            "
+          >
+            <div class="position-relative mb-5">
+              <span class="fs-7 text-orange">Sobre nos</span>
+              <h1 class="fs-3 text-white fw-bold">Supremo CRM</h1>
+            </div>
+            <a
+              href=""
+              class="fs-7 link-underline link-underline-opacity-0 text-white d-flex align-items-center gap-2 position-relative"
+              >Anunciar<span
+                class="border px-3 p-2 rounded border-white d-flex align-items-center"
+                ><i class="fs-8 fa-solid fa-arrow-right-long"></i></span
+            ></a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="bg-blue-d">
+          <div class="container">
+            <div
+              class="pt-4 pb-4 border-bottom border-white-50 d-flex align-items-center justify-content-between"
+            >
+              <img
+                style="width: 150px"
+                src="img/logo-supremo-branco.png"
+                alt="Logo Supremo CRM par Imobiliárias"
+              />
+
+              <div class="d-flex align-items-center gap-1">
+                <span
+                  class="justify-content-center text-white rounded-2 border d-flex align-items-center"
+                  style="width: 23px; height: 23px"
+                  ><i class="fa-brands fs-7 fa-instagram"></i
+                ></span>
+                <span
+                  class="justify-content-center text-white rounded-2 border d-flex align-items-center"
+                  style="width: 23px; height: 23px"
+                  ><i class="fa-brands fs-7 fa-facebook-f"></i
+                ></span>
+                <span
+                  class="justify-content-center text-white rounded-2 border d-flex align-items-center"
+                  style="width: 23px; height: 23px"
+                  ><i class="fa-brands fs-7 fa-youtube"></i
+                ></span>
+                <span
+                  class="justify-content-center text-white rounded-2 border d-flex align-items-center"
+                  style="width: 23px; height: 23px"
+                  ><i class="fa-brands fs-7 fa-linkedin"></i
+                ></span>
+              </div>
+
+              <a
+                href=""
+                class="d-flex align-items-center gap-2 link-underline link-underline-opacity-0 text-white fw-semibold"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+                (79) 9999-9999
+              </a>
+            </div>
+
+            <div class="pt-4 pb-1 d-flex justify-content-between">
+              <ul
+                class="ps-0 d-flex flex-column gap-2 text-white fs-7 fw-semibold"
+                style="list-style: none"
+              >
+                <li class="fs-6 text-orange opacity-50">Navegação</li>
+                <li>Pagina Inicial</li>
+                <li>Buscar Imoveis</li>
+                <li>Empreendimentos</li>
+                <li>Anuncie aqui</li>
+                <li>Sobre nos</li>
+                <li>Entre em contato</li>
+                <li>Politica de Privacidade</li>
+              </ul>
+              <ul
+                class="ps-0 d-flex flex-column gap-2 text-white fs-7 fw-semibold"
+                style="list-style: none"
+              >
+                <li class="fs-6 text-orange opacity-50">Mais Buscados</li>
+                <li>3 quartos na Praia Brava</li>
+                <li>3 quartos na Praia Brava</li>
+                <li>3 quartos na Praia Brava</li>
+                <li>3 quartos na Praia Brava</li>
+                <li>3 quartos na Praia Brava</li>
+                <li>3 quartos na Praia Brava</li>
+                <li>3 quartos na Praia Brava</li>
+              </ul>
+              <ul
+                class="ps-0 d-flex flex-column gap-2 text-white fs-7 fw-semibold"
+                style="list-style: none"
+              >
+                <li class="fs-6 text-orange opacity-50">Endereço</li>
+                <li>Riveira Business & Mall</li>
+                <li>Av. Francisco Reis, 281 - Sala 12 - Terreo</li>
+                <li>Meia Praia, Itapema - SC</li>
+                <li>CEP: 88000-000</li>
+                <li class="mt-3">CRECI/SC 12345-J</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white text-black fs-7 d-flex justify-content-center p-2">
+          Site desenvolvido por <b class="ms-1">Supremo CRM</b>
+        </div>
+      </footer>
     </section>
 
-    <script src="https://kit.fontawesome.com/0c20b4c8f7.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/0c20b4c8f7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/dropdown.js"></script>
+  </body>
 </html>
