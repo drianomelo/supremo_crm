@@ -89,6 +89,18 @@ body {
   color: var(--clr-orange) !important;
 }
 
+.menu {
+  max-width: 300px;
+  left: -100%;
+  transition: all 0.3s;
+}
+
+.menu-bg {
+  z-index: -10;
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+
 @media (max-width: 991px) {
   .cod-search > input {
     padding: 1rem !important;
