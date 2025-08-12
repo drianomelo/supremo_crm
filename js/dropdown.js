@@ -96,8 +96,8 @@ const CONTENT_BAIRROS_CIDADE = [
       { value: "centro", nome: "Centro" },
       { value: "fazenda", nome: "Fazenda" },
       { value: "fazendinha", nome: "Fazendinha" },
-      { value: "praia brava", nome: "Praia Brava" },
-      { value: "praia brava de itajai", nome: "Praia Brava de Itajaí" },
+      { value: "praia-brava", nome: "Praia Brava" },
+      { value: "praia-brava-de-itajai", nome: "Praia Brava de Itajaí" },
     ],
   },
   {
