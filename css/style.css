@@ -14,6 +14,10 @@ body {
   font-weight: 400;
 }
 
+.bg-hero {
+  background: url("../img/hero_img.png") center/cover no-repeat;
+}
+
 .bg-blue-d {
   background-color: var(--clr-blue-d) !important;
 }
@@ -105,5 +109,13 @@ body {
   .cod-search > input {
     padding: 1rem !important;
     border-radius: 0 0 0 12px !important;
+  }
+
+  .logo-header {
+    width: 100%;
+  }
+
+  .dropdown > div {
+    width: 100%;
   }
 }
