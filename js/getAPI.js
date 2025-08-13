@@ -6,11 +6,16 @@ fetch("jlc_api.json")
     return response.json();
   })
   .then((data) => {
-    document.getElementById("lancamentos").innerHTML = `
+    const lancamentos = document.getElementById("lancamentos");
+    const venda = document.getElementById("venda");
+    const alugar = document.getElementById("alugar");
+
+    if (lancamentos) {
+      lancamentos.innerHTML = `
         ${data.secoes.lancamentos
           .map((lancamento) => {
             return `
-                <div class="col-lg-4 col-sm-6 col-12 card-lancamentos">
+                <div class="col-lg-4 col-6 mb-lg-5  card-lancamentos">
                     <div class="card-lancamentos-figure position-relative rounded-4 p-3 d-flex gap-2 flex-column justify-content-end overflow-hidden" style="height: 300px;">
                         <span class="card-lancamentos-tag position-absolute z-2 bg-orange fs-8 rounded-start-4 px-3 text-white fw-semibold">${
                           lancamento.tipo
@@ -69,121 +74,152 @@ fetch("jlc_api.json")
           .join("")}
 
     `;
+    }
 
-    document.getElementById("venda").innerHTML = `
-        ${data.secoes.venda
-          .map((imovel) => {
-            return `
-                <div class="col-lg-4 col-sm-6 col-12 card-vendas">
-                    <div class="card-vendas-figure position-relative rounded-3 p-2 overflow-hidden" style="height: 250px;">
-                        <div class="card-vendas-bg w-100 h-100 position-absolute start-0 top-0" style="background: url('${
-                          imovel.foto_link
-                        }') center/cover no-repeat;"></div>
-                        <div class="card-vendas-tags position-absolute row gap-1" style="left: 20px">
-                            ${imovel.tags
-                              .map((tag) => {
-                                return `
-                                    <span
-                                        class="bg-orange text-white fs-8 rounded-5 px-3 fw-semibold"
-                                        style="width: fit-content; padding:.1rem 0 .1rem 0"
-                                        >${tag}</span
-                                    >
-                                `;
-                              })
-                              .join("")}
-                        </div>
-                    </div>
+    if (venda) {
+      venda.innerHTML = `
+          ${data.secoes.venda
+            .map((imovel) => {
+              return `
+                  <div class="col-lg-4 col-sm-6 col-12 card-vendas">
+                      <div class="card-vendas-figure position-relative rounded-3 p-2 overflow-hidden" style="height: 250px;">
+                          <div class="card-vendas-bg w-100 h-100 position-absolute start-0 top-0" style="background: url('${
+                            imovel.foto_link
+                          }') center/cover no-repeat;"></div>
+                          <div class="card-vendas-tags position-absolute row gap-1" style="left: 20px">
+                              ${imovel.tags
+                                .map((tag) => {
+                                  return `
+                                      <span
+                                          class="bg-orange text-white fs-8 rounded-5 px-3 fw-semibold"
+                                          style="width: fit-content; padding:.1rem 0 .1rem 0"
+                                          >${tag}</span
+                                      >
+                                  `;
+                                })
+                                .join("")}
+                          </div>
+                      </div>
+  
+                      <div class="d-flex flex-column gap-2 mt-3">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <span class="text-black fw-bold fs-5">${imovel.preco.toLocaleString(
+                                "pt-BR",
+                                {
+                                  style: "currency",
+                                  currency: "BRL",
+                                }
+                              )}</span>
+                              <span class="fs-7 opacity-50">Cod. ${
+                                imovel.codigo
+                              }</span>
+                          </div>
+  
+                          <div class="d-flex flex-column">
+                              <span class="text-black opacity-75">${
+                                imovel.titulo
+                              }, ${imovel.tipo}</span
+                              >
+                              <span class="text-black opacity-75">${
+                                imovel.localizacao.endereco
+                              } - ${imovel.localizacao.bairro}, ${
+                imovel.localizacao.cidade
+              }</span>
+                          </div>
+  
+                          <ul class="d-flex gap-4 ps-0 m-0">
+                              <li class="fs-7 text-black fw-bold" style="list-style: none">
+                              ${imovel.area_total_m2}
+                              </li>
+                              <li class="fs-7 text-black fw-bold">${
+                                imovel.quartos
+                              } quartos</li>
+                              <li class="fs-7 text-black fw-bold">${
+                                imovel.suites
+                              } suites</li>
+                              <li class="fs-7 text-black fw-bold">${
+                                imovel.vagas
+                              } vagas</li>
+                          </ul>
+                      </div>
+                  </div>
+            `;
+            })
+            .join("")}
+  
+      `;
+    }
 
-                    <div class="d-flex flex-column gap-2 mt-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-black fw-bold fs-5">${imovel.preco.toLocaleString(
-                              "pt-BR",
-                              {
-                                style: "currency",
-                                currency: "BRL",
-                              }
-                            )}</span>
-                            <span class="fs-7 opacity-50">Cod. ${imovel.codigo}</span>
-                        </div>
-
-                        <div class="d-flex flex-column">
-                            <span class="text-black opacity-75">${imovel.titulo}, ${imovel.tipo}</span
-                            >
-                            <span class="text-black opacity-75">${imovel.localizacao.endereco} - ${imovel.localizacao.bairro}, ${imovel.localizacao.cidade}</span>
-                        </div>
-
-                        <ul class="d-flex gap-4 ps-0 m-0">
-                            <li class="fs-7 text-black fw-bold" style="list-style: none">
-                            ${imovel.area_total_m2}
-                            </li>
-                            <li class="fs-7 text-black fw-bold">${imovel.quartos} quartos</li>
-                            <li class="fs-7 text-black fw-bold">${imovel.suites} suites</li>
-                            <li class="fs-7 text-black fw-bold">${imovel.vagas} vagas</li>
-                        </ul>
-                    </div>
-                </div>
-          `;
-          })
-          .join("")}
-
-    `;
-
-    document.getElementById("alugar").innerHTML = `
-        ${data.secoes.aluguel
-          .map((imovel) => {
-            return `
-                <div class="col-lg-4 col-sm-6 col-12 card-vendas">
-                    <div class="card-vendas-figure position-relative rounded-3 p-2 overflow-hidden" style="height: 250px;">
-                        <div class="card-vendas-bg w-100 h-100 position-absolute start-0 top-0" style="background: url('${
-                          imovel.foto_link
-                        }') center/cover no-repeat;"></div>
-                        <div class="card-vendas-tags position-absolute row gap-1" style="left: 20px">
-                            ${imovel.tipo
-                              .map((tag) => {
-                                return `
-                                    <span
-                                        class="bg-orange text-white fs-8 rounded-5 px-3 fw-semibold"
-                                        style="width: fit-content; padding:.1rem 0 .1rem 0"
-                                        >${tag}</span
-                                    >
-                                `;
-                              })
-                              .join("")}
-                        </div>
-                    </div>
-
-                    <div class="d-flex flex-column gap-2 mt-3">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <span class="text-white fw-bold fs-5">${imovel.preco.toLocaleString(
-                              "pt-BR",
-                              {
-                                style: "currency",
-                                currency: "BRL",
-                              }
-                            )}</span>
-                            <span class="fs-7 opacity-50">Cod. ${imovel.codigo}</span>
-                        </div>
-
-                        <div class="d-flex flex-column">
-                            <span class="text-white opacity-75">${imovel.titulo}</span
-                            >
-                            <span class="text-white opacity-75">${imovel.localizacao.endereco} - ${imovel.localizacao.bairro}, ${imovel.localizacao.cidade}</span>
-                        </div>
-
-                        <ul class="d-flex gap-4 ps-0 m-0">
-                            <li class="fs-7 text-white fw-bold" style="list-style: none">
-                            ${imovel.area_util_m2}
-                            </li>
-                            <li class="fs-7 text-white fw-bold">${imovel.banheiros} banheiros</li>
-                            <li class="fs-7 text-white fw-bold">${imovel.vagas} vagas</li>
-                        </ul>
-                    </div>
-                </div>
-          `;
-          })
-          .join("")}
-
-    `;
+    if (alugar) {
+      alugar.innerHTML = `
+          ${data.secoes.aluguel
+            .map((imovel) => {
+              return `
+                  <div class="col-lg-4 col-sm-6 col-12 card-vendas">
+                      <div class="card-vendas-figure position-relative rounded-3 p-2 overflow-hidden" style="height: 250px;">
+                          <div class="card-vendas-bg w-100 h-100 position-absolute start-0 top-0" style="background: url('${
+                            imovel.foto_link
+                          }') center/cover no-repeat;"></div>
+                          <div class="card-vendas-tags position-absolute row gap-1" style="left: 20px">
+                              ${imovel.tipo
+                                .map((tag) => {
+                                  return `
+                                      <span
+                                          class="bg-orange text-white fs-8 rounded-5 px-3 fw-semibold"
+                                          style="width: fit-content; padding:.1rem 0 .1rem 0"
+                                          >${tag}</span
+                                      >
+                                  `;
+                                })
+                                .join("")}
+                          </div>
+                      </div>
+  
+                      <div class="d-flex flex-column gap-2 mt-3">
+                          <div class="d-flex justify-content-between align-items-center">
+                              <span class="text-white fw-bold fs-5">${imovel.preco.toLocaleString(
+                                "pt-BR",
+                                {
+                                  style: "currency",
+                                  currency: "BRL",
+                                }
+                              )}</span>
+                              <span class="fs-7 opacity-50">Cod. ${
+                                imovel.codigo
+                              }</span>
+                          </div>
+  
+                          <div class="d-flex flex-column">
+                              <span class="text-white opacity-75">${
+                                imovel.titulo
+                              }</span
+                              >
+                              <span class="text-white opacity-75">${
+                                imovel.localizacao.endereco
+                              } - ${imovel.localizacao.bairro}, ${
+                imovel.localizacao.cidade
+              }</span>
+                          </div>
+  
+                          <ul class="d-flex gap-4 ps-0 m-0">
+                              <li class="fs-7 text-white fw-bold" style="list-style: none">
+                              ${imovel.area_util_m2}
+                              </li>
+                              <li class="fs-7 text-white fw-bold">${
+                                imovel.banheiros
+                              } banheiros</li>
+                              <li class="fs-7 text-white fw-bold">${
+                                imovel.vagas
+                              } vagas</li>
+                          </ul>
+                      </div>
+                  </div>
+            `;
+            })
+            .join("")}
+  
+      `;
+    }
   })
   .catch((error) => {
     console.error("Erro:", error);
