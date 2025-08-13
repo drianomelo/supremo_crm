@@ -1,0 +1,197 @@
+{
+  "secoes": {
+    "aluguel": [
+      {
+        "titulo": "Galpão Comercial - Aruana",
+        "codigo": "187337",
+        "operacao": "alugar",
+        "tipo": ["Galpão", "Depósito", "Armazém"],
+        "localizacao": {
+          "endereco": "Avenida José Vicente de Almeida",
+          "bairro": "Aruana",
+          "cidade": "Aracaju",
+          "estado": "SE"
+        },
+        "quartos": 0,
+        "banheiros": 3,
+        "vagas": 3,
+        "area_util_m2": "150m²",
+        "preco": 6500.0,
+        "moeda": "BRL",
+        "tags": ["Pronto Pra Morar", "Posição Solar: Sul"],
+        "link": "https://jlcimobiliaria.com.br/imovel/187337/galpo-comercial-aruana",
+        "foto_link": "https://cdn.sistemasupremo.com.br/17/imoveis/187337/g_20250728165909_15_20250728170050.jpg"
+      },
+      {
+        "titulo": "Prédio Comercial para Aluguel – Rua Siriri",
+        "codigo": "175957",
+        "operacao": "alugar",
+        "tipo": ["Prédio", "Edifício Inteiro Comercial"],
+        "localizacao": {
+          "endereco": "Rua Siriri",
+          "bairro": "Centro",
+          "cidade": "Aracaju",
+          "estado": "SE"
+        },
+        "quartos": 5,
+        "banheiros": null,
+        "vagas": null,
+        "area_total_m2": 300,
+        "area_util_m2": "280m²",
+        "preco": 5500.0,
+        "moeda": "BRL",
+        "tags": [],
+        "link": "https://jlcimobiliaria.com.br/imoveis.php?para=alugar",
+        "foto_link": "https://cdn.sistemasupremo.com.br/17/imoveis/175957/g_20250509150949_0_20250509151015.jpg"
+      },
+      {
+        "titulo": "Apartamento – Condomínio Marbello Residence",
+        "codigo": "189594",
+        "operacao": "alugar",
+        "tipo": ["Apartamento"],
+        "localizacao": {
+          "endereco": "Professor Joaquim Cardoso",
+          "bairro": "Coroa do Meio",
+          "cidade": "Aracaju",
+          "estado": "SE"
+        },
+        "quartos": 2,
+        "banheiros": 2,
+        "vagas": 1,
+        "preco": 4000.0,
+        "area_util_m2": "58m²",
+        "moeda": "BRL",
+        "tags": [],
+        "link": "https://jlcimobiliaria.com.br/imoveis.php?para=alugar",
+        "foto_link": "https://cdn.sistemasupremo.com.br/17/imoveis/189594/g_20250811114500_0_20250811114515.jpg"
+      }
+    ],
+    "venda": [
+      {
+        "titulo": "Casa de Alto Padrão à venda",
+        "codigo": "187592",
+        "operacao": "vender",
+        "tipo": "Casa",
+        "localizacao": {
+          "endereco": "Rua Sônia Alves Lopes",
+          "bairro": "Coroa do Meio",
+          "cidade": "Aracaju",
+          "estado": "SE"
+        },
+        "quartos": 7,
+        "suites": 5,
+        "banheiros": 4,
+        "vagas": 4,
+        "area_total_m2": "889m²",
+        "preco": 3500000.0,
+        "moeda": "BRL",
+        "tags": ["Pronto Pra Morar", "IPTU Anual: R$ 8.847,81"],
+        "link": "https://jlcimobiliaria.com.br/imovel/187592/casa-de-alto-padro-venda-bairro-coroa-do-meio",
+        "foto_link": "https://cdn.sistemasupremo.com.br/17/imoveis/187592/g_20250729104351_12_20250729104503.jpg"
+      },
+      {
+        "titulo": "Condomínio Lago Paranoá",
+        "codigo": "86983",
+        "operacao": "vender",
+        "tipo": "Casa de Condomínio",
+        "localizacao": {
+          "endereco": "Rua N",
+          "bairro": "Mosqueiro",
+          "cidade": "Aracaju",
+          "estado": "SE"
+        },
+        "quartos": 6,
+        "banheiros": 7,
+        "suites": 6,
+        "vagas": 6,
+        "area_total_m2": "578m²",
+        "preco": 3000000.0,
+        "moeda": "BRL",
+        "tags": ["IPTU Anual: R$ 7.000,00", "Posição Solar: Norte"],
+        "link": "https://jlcimobiliaria.com.br/imoveis.php?para=vender",
+        "foto_link": "https://cdn.sistemasupremo.com.br/17/imoveis/86983/g_20230817114356_14.jpg"
+      },
+      {
+        "titulo": "Condomínio Prime Jardim Europa",
+        "codigo": "87019",
+        "operacao": "vender",
+        "tipo": "Apartamento",
+        "localizacao": {
+          "endereco": "Rua Monsenhor Olívio Teixeira",
+          "bairro": "Jardins",
+          "cidade": "Aracaju",
+          "estado": "SE"
+        },
+        "quartos": 3,
+        "suites": 3,
+        "banheiros": 4,
+        "vagas": 4,
+        "area_total_m2": "231m²",
+        "preco": 2500000.0,
+        "moeda": "BRL",
+        "tags": ["IPTU Anual: R$ 8.500,00", "Posição Solar: Norte/Leste"],
+        "link": "https://jlcimobiliaria.com.br/imoveis.php?para=vender",
+        "foto_link": "https://cdn.sistemasupremo.com.br/17/imoveis/87019/g_20230817144801_7.jpg"
+      }
+    ],
+    "lancamentos": [
+      {
+        "titulo": "Cyano Residence",
+        "codigo": "VEM_35087",
+        "tipo": "Apartamento",
+        "operacao": "vender",
+        "localizacao": {
+          "bairro": "Aruana",
+          "cidade": "Aracaju",
+          "rua": "Rua Manoel Espinheira Fonseca",
+          "estado": "SE"
+        },
+        "quartos": "3",
+        "banheiros": "2",
+        "vagas": "2",
+        "preco_a_partir": 447115.0,
+        "moeda": "BRL",
+        "link": "https://jlcimobiliaria.com.br/imoveis.php?situacao=3",
+        "foto_link": "https://cdn.sistemasupremo.com.br/17/empreendimentos/35087/43778/g_p1j1tjbs7uepr1q29a9h3subj4.jpg"
+      },
+      {
+        "titulo": "Soho Residence",
+        "codigo": "VEM_13942",
+        "tipo": "Apartamento",
+        "operacao": "vender",
+        "localizacao": {
+          "bairro": "Coroa do Meio",
+          "cidade": "Aracaju",
+          "rua": "Rua Capitão Tenente Edvaldo Lima Santos",
+          "estado": "SE"
+        },
+        "quartos": "1, 2 ou 3",
+        "banheiros": 2,
+        "vagas": 2,
+        "preco_a_partir": 619997.0,
+        "moeda": "BRL",
+        "link": "https://jlcimobiliaria.com.br/imoveis.php?situacao=3",
+        "foto_link": "https://cdn.sistemasupremo.com.br/17/empreendimentos/13942/18061/g_p1h585ssmd108i7g89p61o4c1djkc.jpg"
+      },
+      {
+        "titulo": "Arbo Residence",
+        "codigo": "VEM_31598",
+        "tipo": "Apartamento",
+        "operacao": "vender",
+        "localizacao": {
+          "bairro": "Farolândia",
+          "cidade": "Aracaju",
+          "rua": "Av. Gov. Paulo Barreto de Menezes",
+          "estado": "SE"
+        },
+        "quartos": "2 ou 3",
+        "banheiros": 2,
+        "vagas": 2,
+        "preco_a_partir": 581420.0,
+        "moeda": "BRL",
+        "link": "https://jlcimobiliaria.com.br/imoveis.php?situacao=3",
+        "foto_link": "https://ss.cloudadmin.com.br/img/17/empreendimentos/31598/40301/g_p1imprpjc81iq1ou9dbhsse8e4q.webp"
+      }
+    ]
+  }
+}
