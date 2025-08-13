@@ -58,7 +58,8 @@ body {
   border-color: var(--clr-white-50) !important;
 }
 
-.card-lancamentos, .card-vendas {
+.card-lancamentos,
+.card-vendas {
   cursor: pointer;
 }
 
@@ -75,7 +76,8 @@ body {
   transition: all 0.3s;
 }
 
-.card-lancamentos-bg, .card-vendas-bg {
+.card-lancamentos-bg,
+.card-vendas-bg {
   transition: all 0.3s;
 }
 
@@ -155,5 +157,10 @@ body {
 
   .dropdown > div {
     width: 100%;
+  }
+
+  .gutter-x4 {
+    --bs-gutter-x: 0;
+    gap: 1.5rem;
   }
 }
