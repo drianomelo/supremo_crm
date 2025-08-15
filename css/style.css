@@ -18,6 +18,18 @@ body {
   background: url("../img/hero_img.png") center/cover no-repeat;
 }
 
+.bg-hero-2 {
+  background: url("../img/bg-hero-2.webp") center/cover no-repeat;
+}
+
+.bg-hero-3 {
+  background: url("../img/bg-hero-3.webp") center/cover no-repeat;
+}
+
+.bg-hero-4 {
+  background: url("../img/bg-hero-4.webp") center/cover no-repeat;
+}
+
 .bg-blue-d {
   background-color: var(--clr-blue-d) !important;
 }
